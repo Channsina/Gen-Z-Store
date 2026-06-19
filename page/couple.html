@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="bg-gray-100 text-purple-600 p-4 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold">GenZ Store</div>
+                <div class="space-x-4">
+                    <a href="../home.html" class="hover:text-pink-300">Home</a>
+                    <a href="../page/product.html" class="hover:text-pink-300">Products</a>
+                    <a href="../page/about.html" class="hover:text-pink-300">About</a>
+                    <a href="../page/contact.html" class="hover:text-pink-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero img -->
+    <div class="relative mx-auto max-w-7xl overflow-hidden p-5 ">
+        <img class=" w-full h-36 md:h-70 lg:h-92 shadow-lg rounded-3xl object-cover object-center" src="https://glance-web.glance-cdn.com/8941_8dff8f24fc.jpg" alt="cover all product">
+            <div class="absolute inset-0 flex items-center justify-center p-4">
+                <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold text-center mb-2 drop-shadow-lg leading-tight">
+                    DISCOVER COUPLE STYLE HERE WITH<br>
+                    <span class="text-pink-600">PREMIUM PRODUCTS</span>
+                </h1>
+            </div>
+    </div>
+
+    <!-- The products have all, men, women, couple -->
+    <div class="container max-w-7xl mx-auto p-5 px-4 py-8">
+        <h1 class="text-3xl font-bold mb-6">Our Products</h1>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 mt-6">
+            <a href="/page/product.html" class="bg-purple-700 text-white px-4 py-3 rounded-lg hover:bg-purple-600 text-center">All Styles</a>
+            <a href="/page/men.html" class="bg-purple-700 text-white px-4 py-3 rounded-lg hover:bg-purple-600 text-center">Man Styles</a>
+            <a href="/page/women.html" class="bg-purple-700 text-white px-4 py-3 rounded-lg hover:bg-purple-600 text-center">Women Styles</a>
+            <a href="/page/couple.html" class="bg-purple-700 text-white px-4 py-3 rounded-lg hover:bg-purple-600 text-center">Couple Styles</a>
+        </div>
+    </div>
+
+
+    <div class="container max-w-7xl mx-auto p-5 px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <!-- Product Card 1 -->
+            <div class="max-w-sm bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transform transition duration-500 hover:scale-105">
+                <img class="w-full h-100 object-cover" src="https://down-ph.img.susercontent.com/file/cn-11134208-7ras8-m795el42u12a33" alt="T-Shirt">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">Classic T-Shirt</h2>
+                    <p class="text-gray-600 mb-4">
+                        Soft cotton T-shirt with a relaxed fit. Available in multiple colors.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-semibold text-indigo-600">$19.99</span>
+                        <button class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 transition">
+                                Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="max-w-sm bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transform transition duration-500 hover:scale-105">
+                <img class="w-full h-100 object-cover" src="https://i.pinimg.com/736x/32/09/71/32097160360bb8f3076e39512fa1f5c0.jpg" alt="T-Shirt">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">Classic White Tee</h2>
+                    <p class="text-gray-600 mb-4 line-clamp-2">
+                         A timeless short-sleeved white T-shirt that embodies simplicity, versatility, and effortless style.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-semibold text-indigo-600">$18.99</span>
+                        <button class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="max-w-sm bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transform transition duration-500 hover:scale-105">
+                <img class="w-full h-100 object-cover" src="https://i.pinimg.com/736x/1e/94/99/1e94997f44f6003f609569ec231db15f.jpg" alt="T-Shirt">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">Oversized Sky Blue Tee</h2>
+                    <p class="text-gray-600 mb-4 line-clamp-2">
+                        A relaxed, oversized light blue short-sleeved T-shirt styled with layered silver accessories for a casual yet polished look.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-semibold text-indigo-600">$16.99</span>
+                        <button class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 transition">
+                                Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="max-w-sm bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transform transition duration-500 hover:scale-105">
+                <img class="w-full h-100 object-cover" src="https://i.pinimg.com/736x/6e/33/8b/6e338b65febd14fe42f9d675defbce17.jpg" alt="T-Shirt">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">Earth Tone Brown Tee</h2>
+                    <p class="text-gray-600 mb-4 line-clamp-2">
+                        A plain brown short-sleeved T-shirt styled with a silver chain necklace, wristwatch, and a black shoulder strap, creating a modern streetwear vibe with understated confidence.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-semibold text-indigo-600">$17.99</span>
+                        <button class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 transition">
+                                Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="max-w-sm bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transform transition duration-500 hover:scale-105">
+                <img class="w-full h-100 object-cover" src="https://i.pinimg.com/1200x/ad/fc/a5/adfca561b04406481c131a404a3e366f.jpg" alt="T-Shirt">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">Relaxed White Drawstring</h2>
+                    <p class="text-gray-600 mb-4 line-clamp-2">
+                        These lightweight, loose-fit pants feature a comfortable elastic waistband with a visible drawstring and side pockets, offering a casual yet stylish balance of ease and modern minimalism.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-semibold text-indigo-600">$17.99</span>
+                        <button class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="max-w-sm bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transform transition duration-500 hover:scale-105">
+                <img class="w-full h-100 object-cover" src="https://i.pinimg.com/736x/ac/13/c7/ac13c74bd002b1981b0c9f70058d5a44.jpg" alt="T-Shirt">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">Beige Street Joggers</h2>
+                    <p class="text-gray-600 mb-4 line-clamp-2">
+                        Light beige jogger-style pants with elastic cuffs, black drawstring tipped in orange, and subtle orange seam accents, blending comfort with modern streetwear flair.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-semibold text-indigo-600">$19.99</span>
+                        <button class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-purple-700 text-white p-4">
+        <div class="container mx-auto">
+            <p class="text-center">&copy; 2023 Clothes Store. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Page</title>
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="/src/output.css">
 </head>
-<body class="min-h-screen flex flex-col bg-gray-100">
+<body class="min-h-screen flex flex-col bg-white">
 
     <!-- Navigation -->
-    <nav class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white p-4 sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="text-xl font-bold">GenZ Store</div>
-
-            <div class="space-x-4">
-                <a href="../home.html" class="hover:text-yellow-300">Home</a>
-                <a href="../page/product.html" class="hover:text-yellow-300">Products</a>
-                <a href="../page/about.html" class="hover:text-yellow-300">About</a>
-                <a href="../page/contact.html" class="hover:text-yellow-300">Contact</a>
+    <nav class="bg-gray-100 text-purple-600 shadow p-4 sticky top-0 z-50">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold">GenZ Store</div>
+                <div class="space-x-4">
+                    <a href="../home.html" class="hover:text-pink-600">Home</a>
+                    <a href="../page/product.html" class="hover:text-pink-600">Products</a>
+                    <a href="../page/about.html" class="hover:text-pink-600">About</a>
+                    <a href="../page/contact.html" class="hover:text-pink-600">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="py-16 bg-gray-200 text-indigo-700">
+    <section class="py-16 bg-gray-100 text-purple-600">
         <div class="container mx-auto text-center">
             <h1 class="text-6xl md:text-7xl font-extrabold mb-4 tracking-tight">
             GET IN TOUCH WITH 
@@ -35,12 +36,11 @@
             <p class="text-xl mb-8 text-gray-700">
             We’d love to hear from you — drop us a message <br> and stay connected with the latest trends!
             </p>
-            <a href="#contact-form" class="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-3 rounded-full shadow-lg hover:from-purple-600 hover:to-pink-500 transition duration-300">
+            <a href="#contact-form" class="bg-purple-600 text-white px-8 py-3 rounded-full shadow-lg hover:bg-indigo-600">
             Contact Us
             </a>
         </div>
     </section>
-
 
     <!-- Main Content -->
     <main class="flex-grow flex items-center justify-center p-6">
@@ -48,7 +48,7 @@
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden max-w-5xl w-full grid md:grid-cols-2">
 
             <!-- Left Section -->
-            <div class="bg-indigo-700 text-white flex flex-col items-center justify-center p-10">
+            <div class="bg-purple-700 text-white flex flex-col items-center justify-center p-10">
 
                 <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center mb-8">
                     <img src="https://copilot.microsoft.com/th/id/BCO.e5597b0b-370e-40ff-b0d6-f7a9d869c1ed.png"
@@ -60,24 +60,39 @@
                     Get in touch with us
                 </h2>
 
-                <p class="text-center text-gray-200 mb-12">
+                <p class="text-center mb-12">
                     Please send us a little more detail so we can help you.
                 </p>
 
                 <div class="space-y-8">
 
                     <div class="flex items-center gap-4">
-                        <span>📧</span>
+                        <div class="bg-white rounded-lg h-10 w-10 flex items-center justify-center shadow-2xl">
+                            <span class="w-8 h-8 rounded-lg stroke-2 stroke-blue-500 flex items-center justify-center text-blue-600 shrink-0 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-5 h-5" fill="purple">
+                                    <path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/>
+                                </svg>
+                            </span>
+                        </div>
                         <span>info@genzstore.com</span>
                     </div>
 
-                    <div class="flex items-center gap-4">
-                        <span>📞</span>
+                    <div class="flex items-center gap-4 ">
+                        <div class="bg-white rounded-lg h-10 w-10 flex items-center justify-center shadow-2xl">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="purple">
+                                <path d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z"/>
+                            </svg>
+                        </div>
+
                         <span>+855 123456789</span>
                     </div>
 
                     <div class="flex items-center gap-4">
-                        <span>📍</span>
+                        <div class="bg-white rounded-xl h-10 w-10 flex items-center justify-center shadow-2xl">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="purple">
+                                <path d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z"/>
+                            </svg>
+                        </div>
                         <span>Phnom Penh, Cambodia</span>
                     </div>
 
@@ -86,7 +101,7 @@
             </div>
 
             <!-- Right Section -->
-            <div class="p-10 md:p-14 bg-indigo-100">
+            <div class="p-10 md:p-14 bg-gray-100">
 
                 <h2 class="text-4xl font-bold text-gray-700 mb-2">
                     Contact Us
@@ -105,7 +120,7 @@
                         <input
                             type="text"
                             placeholder="Enter your full name"
-                            class="w-full rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#4F5D46]">
+                            class="w-full border-gray-300 border-1 rounded-2xl px-4 py-3 focus:outline-purple-500 focus:ring-1 focus:ring-[#4F5D46]">
                     </div>
 
                     <div>
@@ -115,7 +130,7 @@
                         <input
                             type="email"
                             placeholder="Enter your email"
-                            class="w-full rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#4F5D46]">
+                            class="w-full rounded-2xl px-3 py-3 border-gray-300 border-1 focus:outline-purple-500 focus:ring-1 focus:ring-[#4F5D46]">
                     </div>
 
                     <div>
@@ -125,12 +140,12 @@
                         <textarea
                             rows="4"
                             placeholder="Enter your message"
-                            class="w-full rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#4F5D46]"></textarea>
+                            class="w-full rounded-2xl px-4 py-3 border-gray-300 border-1 focus:outline-purple-500 focus:ring-1 focus:ring-[#4F5D46]"></textarea>
                     </div>
 
                     <button
                         type="submit"
-                        class="w-full inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-yellow-300 hover:text-black transition duration-300">
+                        class="w-full inline-block bg-purple-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-indigo-600">
                         Submit
                     </button>
                 </form>
@@ -139,7 +154,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-indigo-600 text-white py-4">
+    <footer class="bg-purple-700 text-white py-4">
         <div class="container mx-auto">
             <p class="text-center">
                 &copy; 2025 Clothes Store. All rights reserved.

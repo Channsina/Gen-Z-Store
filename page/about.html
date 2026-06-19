@@ -7,91 +7,182 @@
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="/src/output.css">
 </head>
-<body>
+<body class="bg-gray-100">
     <!-- Navigation -->
-    <nav class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white p-4 sticky top-0 z-50">
+    <nav class="bg-gray-100 text-purple-600 shadow p-4 sticky top-0 z-50">
         <div class="container mx-auto">
             <div class="flex justify-between items-center">
                 <div class="text-xl font-bold">GenZ Store</div>
                 <div class="space-x-4">
-                    <a href="../home.html" class="hover:text-yellow-300">Home</a>
-                    <a href="../page/product.html" class="hover:text-yellow-300">Products</a>
-                    <a href="../page/about.html" class="hover:text-yellow-300">About</a>
-                    <a href="../page/contact.html" class="hover:text-yellow-300">Contact</a>
+                    <a href="../home.html" class="hover:text-pink-600">Home</a>
+                    <a href="../page/product.html" class="hover:text-pink-600">Products</a>
+                    <a href="../page/about.html" class="hover:text-pink-600">About</a>
+                    <a href="../page/contact.html" class="hover:text-pink-600">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!--  -->
-
-    <!--  About  -->
-    <section class="max-w-4xl mx-auto px-6 py-16 fade-up">
-        <div class="flex flex-col md:flex-row items-center gap-10">
-        <!-- Image left -->
-        <div class="flex-shrink-0">
-            <img
-            src="https://euphoriaxr.com/wp-content/uploads/2025/04/Augmented-Reality-in-Fashion-Euphoria-XR.webp"
-            alt="Students collaborating"
-            class="w-[450px] h-58 "
-            />
-        </div>
-        <!-- Text right -->
-        <div class="flex-1">
-            <h2 class="text-3xl font-semibold leading-snug mb-4 text-[#2c2415]">About Clothes Store</h2>
-            <p class="text-sm text-[#6b5d4f] leading-relaxed">
-            Our platform empowers educators and institutions to seamlessly manage student data, track academic progress, and streamline communication — all from a single, intuitive dashboard. Designed for modern schools, it adapts to every workflow while keeping students at the center.
-            </p>
-        </div>
-        </div>
-    </section>
-
-    <!--  Why we chose it  -->
-    <section class="max-w-4xl mx-auto px-6 py-16 fade-up delay-1">
-        <div class="flex flex-col md:flex-row-reverse items-center gap-10">
-        <!-- Image right -->
-        <div class="flex-shrink-0">
-            <img
-            src="https://images.pexels.com/photos/3768005/pexels-photo-3768005.jpeg?cs=srgb&dl=pexels-william-matt-3768005.jpg&fm=jpg"
-            alt="Why we chose it"
-            class="w-[450px] h-58"
-            />
-        </div>
-        <!-- Text left -->
-        <div class="flex-1">
-            <h2 class="text-2xl font-semibold mb-4 text-[#2c2415]">Why we chose make it ?</h2>
-            <p class="text-sm text-[#6b5d4f] leading-relaxed">
-            We identified a critical gap in how educational institutions handle student information. Legacy tools are fragmented, difficult to scale, and often inaccessible to non-technical staff. We built this system to bridge that gap — making robust student management approachable for every school, from small community centres to large universities.
-            </p>
-        </div>
-        </div>
-    </section>
-
-    <!--  I am looking for ── -->
-    <section class="max-w-4xl mx-auto px-6 py-16 fade-up delay-2">
-        <div class="flex flex-col md:flex-row items-center gap-10">
-        <!-- Image left -->
-        <div class="flex-shrink-0">
-            <img
-            src="https://static.vecteezy.com/system/resources/previews/030/640/003/large_2x/modern-men-fashion-in-retail-boutique-store-free-photo.jpg"
-            alt="Looking for"
-            class="w-[450px] h-58 "
-            />
-        </div>
-        <!-- Text right -->
-        <div class="flex-1">
-            <h2 class="text-2xl font-semibold mb-4 text-[#2c2415]">I am looking for seed</h2>
-            <p class="text-sm text-[#6b5d4f] leading-relaxed">
-            As a student in management science, I am looking to connect with mentors, advisors, and early-stage investors who believe in ed-tech innovation. I am seeking guidance on product development, go-to-market strategy, and building a sustainable educational platform that genuinely serves students and teachers alike.
-            </p>
-        </div>
-        </div>
-    </section>
+    <div class="max-w-5xl p-5 mx-auto px-6 py-12 space-y-10">
     
+        <!-- About GenZ Store -->
+        <div class="flex flex-col md:flex-row items-center gap-10">
+            <div class="bg-white w-[400px] h-96 rounded-xl shadow-lg overflow-hidden">
+                <img src="/image/Choosing clothes-bro.png" alt="GenZ fashion"
+                    class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"/>
+            </div>
+
+            <div class="flex-1 max-w-xl">
+                <h2 class="text-3xl font-semibold leading-snug mb-4 text-purple-500">About GenZ Store</h2>
+                <p class="text-sm text-[#6b5d4f] leading-relaxed">
+                    GenZ Store is your destination for trendy, affordable, and youth‑inspired fashion. We bring together bold streetwear, casual essentials, and modern styles that resonate with the new generation. Our mission is to make fashion fun, expressive, and accessible — helping you create looks that truly reflect your individuality.
+                </p>
+            </div>
+        </div>
+
+        <!-- Why We Chose to Make It -->
+        <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+
+            <!-- Image right -->
+            <div class="bg-white w-[450px] h-96 rounded-xl shadow-lg overflow-hidden">
+                <img src="/image/Choosing clothes-rafiki.png" alt="Fashion racks"
+                    class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"/>
+            </div>
+
+            <!-- Text left -->
+            <div class="flex-1 max-w-xl">
+                <h2 class="text-2xl font-semibold mb-4 text-purple-500">Why We Chose to Make It</h2>
+                <p class="text-sm text-[#6b5d4f] leading-relaxed">
+                    We saw a gap in how fashion connects with the new generation. Too many stores rely on outdated styles or complicated shopping experiences. GenZ Store was built to bridge that gap — making trendy clothing accessible, affordable, and fun for everyone. From bold streetwear to everyday essentials, our mission is to empower self‑expression through fashion.
+                </p>
+            </div>
+        </div>
+
+        <!-- Founder’s Vision -->
+        <div class="flex flex-col md:flex-row items-center gap-10">
+            <!-- left -->
+            <div class="bg-white w-[400px] h-96 rounded-xl shadow-lg overflow-hidden">
+                <img src="/image/Thinking face-rafiki.png" alt="Founder vision" class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110" />
+            </div>
+
+            <!-- right -->
+            <div class="flex-1 max-w-xl">
+                <h2 class="text-2xl font-semibold mb-4 text-purple-500">Founder’s Vision</h2>
+                <p class="text-sm text-[#6b5d4f] leading-relaxed">
+                    As a student of Management Science, I am eager to connect with mentors, advisors, and early‑stage investors who share a belief in ed‑tech innovation. My vision is to build a sustainable educational platform that empowers both students and teachers. I am seeking guidance on product development, go‑to‑market strategy, and long‑term growth — with the goal of creating technology that genuinely enhances learning and communication in modern education.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- image section -->
+    <section class="my-10 px-4 max-w-2xl mx-auto">
+        <div class="flex flex-col gap-12">
+
+            <!-- Lecturer -->
+            <div class="flex flex-col gap-2 shadow-lg rounded-2xl">
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col sm:flex-row w-full sm:h-60">
+
+                    <!-- Image -->
+                    <div class="w-full sm:w-60 shrink-0">
+                    <img src="../image/teacher.png" alt="Mr. Chhim Bunchhun"
+                        class="w-full h-60 sm:h-full object-cover">
+                    </div>
+
+                    <!-- Text -->
+                    <div class="p-6 flex flex-col justify-center gap-4 flex-1 ml-6">
+                    <div>
+                        <h5 class="font-semibold text-gray-800 text-base mb-1">Mr. Chhim Bunchhun</h5>
+                        <span class="text-xs font-medium px-3 py-1 rounded-full"
+                            style="background:#EEEDFE; color:#3C3489;">Lecturer</span>
+                    </div>
+                    <button
+                        class="flex items-center gap-3 text-gray-600 hover:text-purple-600 transition-colors">
+                        <span class="w-7 h-7 rounded-lg bg-purple-100 stroke-2 stroke-blue-500 flex items-center justify-center text-blue-600 shrink-0 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-4 h-4" fill="purple">
+                                    <path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/>
+                                </svg>
+                        </span>
+                        <span class="text-sm">chhim.bunchhun@rupp.edu.kh</span>
+                    </button>
+                    <button
+                        class="flex items-center gap-3 text-gray-600 hover:text-purple-600 transition-colors">
+                        <span class="w-7 h-7 rounded-lg bg-purple-100 flex items-center justify-center text-sky-500 shrink-0 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-5 h-5" fill="purple">
+                                    <path d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z"/>
+                                </svg>
+                        </span>
+                        <span class="text-sm">Bunchhun Chhim</span>
+                    </button>
+                    <button
+                        class="flex items-center gap-3 text-gray-600 hover:text-purple-600 transition-colors">
+                        <span class="w-7 h-7 rounded-lg bg-purple-100 flex items-center justify-center text-sky-500 shrink-0 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-5 h-5" fill="purple">
+                                    <path d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM435 240.7C431.3 279.9 415.1 375.1 406.9 419C403.4 437.6 396.6 443.8 390 444.4C375.6 445.7 364.7 434.9 350.7 425.7C328.9 411.4 316.5 402.5 295.4 388.5C270.9 372.4 286.8 363.5 300.7 349C304.4 345.2 367.8 287.5 369 282.3C369.2 281.6 369.3 279.2 367.8 277.9C366.3 276.6 364.2 277.1 362.7 277.4C360.5 277.9 325.6 300.9 258.1 346.5C248.2 353.3 239.2 356.6 231.2 356.4C222.3 356.2 205.3 351.4 192.6 347.3C177.1 342.3 164.7 339.6 165.8 331C166.4 326.5 172.5 322 184.2 317.3C256.5 285.8 304.7 265 328.8 255C397.7 226.4 412 221.4 421.3 221.2C423.4 221.2 427.9 221.7 430.9 224.1C432.9 225.8 434.1 228.2 434.4 230.8C434.9 234 435 237.3 434.8 240.6z"/>
+                                </svg>
+                        </span>
+                        <span class="text-sm">@cbunchhun</span>
+                    </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Developer -->
+            <div class="flex flex-col gap-8 shadow-lg rounded-2xl">
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col sm:flex-row w-full sm:h-60">
+
+                    <!-- Text -->
+                    <div class="p-6 flex flex-col justify-center gap-4 flex-1 ml-6">
+                        <div>
+                            <h5 class="font-semibold text-gray-800 text-base mb-1">An Channsina</h5>
+                            <span class="text-xs font-medium px-3 py-1 rounded-full"
+                                style="background:#EEEDFE; color:#3C3489;">Developer</span>
+                        </div>
+                        <button
+                            class="flex items-center gap-3 text-gray-600 hover:text-purple-600 transition-colors">
+                            <span class="w-7 h-7 rounded-lg bg-purple-100 stroke-2 stroke-blue-500 flex items-center justify-center text-blue-600 shrink-0 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-4 h-4" fill="purple">
+                                    <path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/>
+                                </svg>
+                            </span>
+                            <span class="text-sm">an.channsina.2824@rupp.edu.kh</span>
+                        </button>
+                        <button
+                            class="flex items-center gap-3 text-gray-600 hover:text-purple-600 transition-colors">
+                            <span class="w-7 h-7 rounded-lg bg-purple-100 flex items-center justify-center text-sky-500 shrink-0 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-5 h-5" fill="purple">
+                                    <path d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z"/>
+                                </svg>
+                            </span>
+                            <span class="text-sm">Channsina An</span>
+                        </button>
+                        <button
+                            class="flex items-center gap-3 text-gray-600 hover:text-purple-600 transition-colors">
+                            <span class="w-7 h-7 rounded-lg bg-purple-100 flex items-center justify-center text-sky-500 shrink-0 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-5 h-5" fill="purple">
+                                    <path d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM435 240.7C431.3 279.9 415.1 375.1 406.9 419C403.4 437.6 396.6 443.8 390 444.4C375.6 445.7 364.7 434.9 350.7 425.7C328.9 411.4 316.5 402.5 295.4 388.5C270.9 372.4 286.8 363.5 300.7 349C304.4 345.2 367.8 287.5 369 282.3C369.2 281.6 369.3 279.2 367.8 277.9C366.3 276.6 364.2 277.1 362.7 277.4C360.5 277.9 325.6 300.9 258.1 346.5C248.2 353.3 239.2 356.6 231.2 356.4C222.3 356.2 205.3 351.4 192.6 347.3C177.1 342.3 164.7 339.6 165.8 331C166.4 326.5 172.5 322 184.2 317.3C256.5 285.8 304.7 265 328.8 255C397.7 226.4 412 221.4 421.3 221.2C423.4 221.2 427.9 221.7 430.9 224.1C432.9 225.8 434.1 228.2 434.4 230.8C434.9 234 435 237.3 434.8 240.6z"/>
+                                </svg>
+                            </span>
+                            <span class="text-sm">@channsina_216</span>
+                        </button>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="w-full sm:w-60 shrink-0">
+                    <img src="../image/me.png" alt="An Channsina"
+                        class="w-full h-60 sm:h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
     <!-- footer -->
-    <footer class="bg-gray-800 text-white p-4">
+    <footer class="bg-purple-800 text-white p-4">
         <div class="container mx-auto">
-            <p class="text-center">&copy; 2023 Clothes Store. All rights reserved.</p>
+            <p class="text-center">&copy; 2026 Clothes Store. All rights reserved.</p>
         </div>
     </footer>
   

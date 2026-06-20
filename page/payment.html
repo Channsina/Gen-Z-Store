@@ -9,50 +9,102 @@
 <body class="bg-gray-100 min-h-screen font-family">
 
   <!-- Navigation -->
-  <nav class="bg-gray-100 text-purple-600 shadow p-4 sticky top-0 z-50">
-    <div class="container mx-auto">
-      <div class="flex justify-between items-center">
-        <div class="text-xl font-bold">GenZ Store</div>
-        <div class="space-x-4">
-          <a href="../home.html" class="hover:text-pink-600">Home</a>
-          <a href="../page/product.html" class="hover:text-pink-600">Products</a>
-          <a href="../page/about.html" class="hover:text-pink-600">About</a>
-          <a href="../page/contact.html" class="hover:text-pink-600">Contact</a>
+    <nav class="bg-gray-100 text-black/50 shadow p-4 sticky top-0 z-50">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="text-xl text-purple-700 font-bold">GenZ Store</div>
+                <div class="hidden md:flex items-center space-x-5">
+                    <a href="../home.html" class="hover:text-purple-600">Home</a>
+                    <a href="../page/product.html" class="hover:text-purple-600">Products</a>
+                    <a href="../page/about.html" class="hover:text-purple-600">About</a>
+                    <a href="../page/contact.html" class="hover:text-purple-600">Contact</a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="../page/checkout.html">
+                        <svg class="w-10 h-10 bg-purple-100 rounded-lg p-2 shadow hover:bg-purple-200 text-purple-700" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L20.96 5H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                        </svg>
+                    </a>
+                    <a href="../page/login.html" class="h-10 flex text-white rounded-2xl shadow bg-purple-600 hover:bg-purple-700 items-center px-5 whitespace-nowrap">
+                        Login
+                    </a>
+                </div>
+
+                <!-- mobile -->
+                <div class="flex md:hidden items-center space-x-3">
+                    <a href="../page/checkout.html">
+                        <svg class="w-9 h-9 bg-purple-100 rounded-lg p-2 text-purple-700 shadow" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L20.96 5H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                        </svg>
+                    </a>
+
+                    <input type="checkbox" id="menu-toggle" class="peer hidden">
+                    <a href="../page/login.html" class="h-9 w-full shadow px-4 flex text-white rounded-xl bg-purple-600 hover:bg-purple-700 items-center justify-center">
+                        Login
+                    </a>
+
+                    <label for="menu-toggle" class="peer-checked:hidden text-purple-700 cursor-pointer">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </label>
+
+                    <!-- close icon  -->
+                    <label for="menu-toggle" class="hidden peer-checked:block text-purple-700 cursor-pointer">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </label>
+
+                    <!-- Mobile dropdown menu: hidden by default, shown when checkbox is checked -->
+                    <div class="hidden peer-checked:flex absolute top-full left-0 w-full bg-gray-100 flex-col space-y-3 p-4 shadow-md">
+                        <a href="../home.html" class="hover:text-purple-600">Home</a>
+                        <a href="../page/product.html" class="hover:text-purple-600">Products</a>
+                        <a href="../page/about.html" class="hover:text-purple-600">About</a>
+                        <a href="../page/contact.html" class="hover:text-purple-600">Contact</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
   <div class="max-w-7xl mx-auto p-5 px-6 py-8">
 
-    <!-- Page title -->
     <h1 class="text-2xl font-medium text-gray-900 mb-6">Payment</h1>
-    <!-- Main grid -->
+
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
-      <!-- Left: Payment form -->
       <div class="lg:col-span-2 space-y-5">
 
-        <!-- Payment method card -->
         <div class="bg-white rounded-xl border border-gray-200 p-5">
           <h2 class="text-base font-medium text-gray-900 mb-4 pb-3 border-b border-gray-100 flex items-center gap-2">
             <svg class="w-4 h-4 text-[#7B00D4]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
             Payment method
           </h2>
 
-          <!-- Tabs -->
-          <div class="flex gap-2 mb-5" id="payment-tabs">
-            <button onclick="switchTab('card')" id="tab-card"
-              class="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 border border-[#7B00D4] bg-[#f5efff] text-[#7B00D4] text-sm font-medium rounded-lg transition-all">
+          <input type="radio" name="paytab" id="radio-card" class="hidden peer/card" checked/>
+          <input type="radio" name="paytab" id="radio-bakong" class="hidden peer/bakong"/>
+
+          <div class="flex gap-2 mb-5">
+            <label for="radio-card"
+              class="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 border text-sm font-medium rounded-lg cursor-pointer transition-all
+                     border-gray-200 bg-white text-gray-500
+                     peer-checked/card:border-[#7B00D4] peer-checked/card:bg-[#f5efff] peer-checked/card:text-[#7B00D4]">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
               Credit card
-            </button>
-            
-          
+            </label>
+
+            <label for="radio-bakong"
+              class="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 border text-sm font-medium rounded-lg cursor-pointer transition-all
+                     border-gray-200 bg-white text-gray-500
+                     peer-checked/bakong:border-[#7B00D4] peer-checked/bakong:bg-[#f5efff] peer-checked/bakong:text-[#7B00D4]">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75h4.5v4.5h-4.5v-4.5zM15.75 3.75h4.5v4.5h-4.5v-4.5zM3.75 15.75h4.5v4.5h-4.5v-4.5zM15.75 15.75h2.25M15.75 18.75h2.25M18.75 15.75v2.25M18.75 19.5v.75M12 3.75v4.5M9.75 12h2.25M12 9.75v2.25M12 14.25v2.25M9.75 16.5h2.25"/></svg>
+              Bakong KHQR
+            </label>
           </div>
 
-          <!-- Panel: Credit card -->
-          <div id="panel-card">
+          <div id="panel-card" class="hidden peer-checked/card:block">
             <div class="mb-3">
               <label class="block text-xs text-gray-500 mb-1">Cardholder name</label>
               <input type="text" placeholder="John Doe" class="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 focus:outline-none focus:border-[#7B00D4] focus:ring-2 focus:ring-[#7B00D4]/20" />
@@ -61,7 +113,7 @@
             <div class="mb-3">
               <label class="block text-xs text-gray-500 mb-1">Card number</label>
               <div class="relative">
-                <input type="text" placeholder="1234  5678  9012  3456" maxlength="19" id="cardnum" oninput="formatCard(this)"
+                <input type="text" placeholder="1234  5678  9012  3456" maxlength="19"
                   class="w-full border border-gray-300 rounded-lg px-3 py-2.5 pr-20 text-sm text-gray-900 focus:outline-none focus:border-[#7B00D4] focus:ring-2 focus:ring-[#7B00D4]/20" />
                 <div class="absolute right-3 top-1/2 -translate-y-1/2 flex gap-1">
                   <span class="text-[9px] font-bold bg-[#1a1f71] text-white px-1.5 py-0.5 rounded">VISA</span>
@@ -73,7 +125,7 @@
             <div class="grid grid-cols-2 gap-3 mb-4">
               <div>
                 <label class="block text-xs text-gray-500 mb-1">Expiry date</label>
-                <input type="text" placeholder="MM / YY" maxlength="7" id="expiry" oninput="formatExpiry(this)"
+                <input type="text" placeholder="MM / YY" maxlength="7"
                   class="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 focus:outline-none focus:border-[#7B00D4] focus:ring-2 focus:ring-[#7B00D4]/20" />
               </div>
               <div>
@@ -93,9 +145,31 @@
               Pay $60.45
             </button>
           </div>
+
+          <div id="panel-bakong" class="hidden peer-checked/bakong:block text-center">
+            <p class="text-xs text-gray-500 mb-4">Scan with any Bakong-enabled banking app to pay <span class="font-medium text-gray-700">$55.97</span></p>
+
+            <div class="w-44 h-44 mx-auto mb-4 bg-white border border-gray-200 rounded-lg flex items-center justify-center">
+              <svg class="w-28 h-28 text-gray-900" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75h4.5v4.5h-4.5v-4.5zM15.75 3.75h4.5v4.5h-4.5v-4.5zM3.75 15.75h4.5v4.5h-4.5v-4.5zM15.75 15.75h2.25M15.75 18.75h2.25M18.75 15.75v2.25M18.75 19.5v.75M12 3.75v4.5M9.75 12h2.25M12 9.75v2.25M12 14.25v2.25M9.75 16.5h2.25"/>
+              </svg>
+            </div>
+
+            <div class="inline-flex items-center gap-1.5 bg-[#f5efff] text-[#7B00D4] text-xs font-medium px-3 py-1 rounded-lg mb-4">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              QR expires in 4:32
+            </div>
+
+            <p class="text-xs text-gray-500 mb-4">Merchant: Sok Pisey Shop &middot; Ref: KHQR-29481</p>
+
+            <button class="w-full bg-[#7B00D4] hover:bg-[#6500b0] text-white font-medium py-3.5 rounded-lg flex items-center justify-center gap-2 transition-colors text-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              I have paid via Bakong
+            </button>
+          </div>
+
         </div>
 
-        <!-- Shipping address summary -->
         <div class="bg-white rounded-xl border border-gray-200 p-4 flex items-center gap-3">
           <div class="w-9 h-9 rounded-full bg-[#f5efff] flex items-center justify-center flex-shrink-0">
             <svg class="w-4 h-4 text-[#7B00D4]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
@@ -108,7 +182,6 @@
         </div>
       </div>
 
-      <!-- order summary -->
       <div class="space-y-4">
         <div class="bg-white rounded-xl border border-gray-200 p-5">
           <h2 class="text-base font-medium text-gray-900 mb-4 pb-3 border-b border-gray-100 flex items-center gap-2">
@@ -148,6 +221,83 @@
 
     </div>
   </div>
+
+  <!-- footer -->
+    <footer class="bg-purple-800 shadow text-white/80 font-family">
+        <div class="max-w-7xl mx-auto px-12 pt-12">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-2 pb-10 border-b border-gray-300 ">
+
+                <div>
+                    <h3 class="mb-4 text-2xl text-white font-bold">GenZ Store</h3>
+                    <p class="text-sm  leading-relaxed mb-5">
+                        GenZ Store brings you the most comfortable and trendy furniture for your modern lifestyle.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-9 h-9 rounded-full bg-purple-600 flex items-center justify-center text-white hover:text-white">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-purple-600 flex items-center justify-center text-white hover:text-white">
+                            <i class="fa-brands fa-instagram text-sm"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-purple-600 flex items-center justify-center text-white hover:text-white">
+                            <i class="fa-brands fa-tiktok text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:pl-16 ">
+                    <h3 class="text-xs font-semibold uppercase tracking-widest mb-4 text-white">Products</h3>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="../page/product.html" class="hover:text-purple-600 transition-colors">All Styles</a></li>
+                        <li><a href="../page/men.html" class="hover:text-purple-600 transition-colors">Men Styles</a></li>
+                        <li><a href="../page/women.html" class="hover:text-purple-600 transition-colors">Women Styles</a></li>
+                        <li><a href="../page/couple.html" class="hover:text-purple-600 transition-colors">Couple Styles</a></li>
+                    </ul>
+                </div>
+
+                <!-- quick link -->
+                <div class="lg:pl-16">
+                    <h3 class="text-xs font-semibold uppercase tracking-widest mb-4 text-white">Quick Link</h3>
+                    <ul class="space-y-2.5 text-sm ">
+                        <li><a href="../home.html" class="hover:text-purple-600 transition-colors">Home</a></li>
+                        <li><a href="../page/about.html" class="hover:text-purple-600 transition-colors">About</a></li>
+                        <li><a href="../page/contact.html" class="hover:text-purple-600 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- contact Info -->
+                <div class="md:pl-16 lg:pl-6">
+                    <h3 class="text-xs font-semibold uppercase tracking-widest  mb-4 text-white">Contact Information</h3>
+                    <ul class="space-y-3 text-sm ">
+                        <li class="flex items-start gap-3">
+                            <a href="#" class="w-9 h-9 rounded-full bg-purple-600 flex items-center justify-center text-white">
+                                <i class="fa-solid fa-envelope mt-0.5"></i>
+                            </a>
+                            <span class="text-sm mt-1.5">info@genzstore.com</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <a href="#" class="w-9 h-9 rounded-full bg-purple-600 flex items-center justify-center text-white">
+                                <i class=" fa-solid fa-phone mt-0.5"></i>
+                            </a>
+                            <span class="text-sm mt-1.5">0123456789</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <a href="#" class="w-9 h-9 rounded-full bg-purple-600 flex items-center justify-center text-white">
+                                <i class="fa-solid fa-location-dot mt-0.5"></i>
+                            </a>
+                            <span class="text-sm mt-1.5">Phnom Penh, Cambodia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="py-5 text-center">
+                <p class="text-xs ">GenZ Store 2026. All Rights Reserved.</p>
+            </div>
+
+        </div>
+    </footer>
 
 </body>
 </html>

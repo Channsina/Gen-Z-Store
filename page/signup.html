@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="/src/output.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Page</title>
+<link rel="shortcut icon" href="https://copilot.microsoft.com/th/id/BCO.e5597b0b-370e-40ff-b0d6-f7a9d869c1ed.png" type="image/x-icon">
+<!-- link css -->
+<link rel="stylesheet" href="/src/output.css">
 </head>
-<body class="min-h-screen flex flex-col bg-white">
+<body class="bg-gray-50 min-h-screen flex flex-col">
 
-    <!-- Navigation -->
+  <!-- Navigation -->
     <nav class="bg-gray-100 text-black/50 shadow p-4 sticky top-0 z-50">
         <div class="container mx-auto">
             <div class="flex justify-between items-center">
@@ -23,7 +24,7 @@
 
                 <div class="hidden md:flex items-center space-x-4">
                     <a href="../page/checkout.html">
-                        <svg class="w-10 h-10 bg-purple-100 rounded-lg p-2 shadow hover:bg-purple-200 text-purple-700" fill="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-10 h-10 bg-purple-100 rounded-lg p-2  shadow hover:bg-purple-200 text-purple-700" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L20.96 5H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
                         </svg>
                     </a>
@@ -70,136 +71,79 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="py-16 bg-gray-100 text-purple-600">
-        <div class="container mx-auto text-center">
-            <h1 class="text-6xl md:text-7xl font-extrabold mb-4 tracking-tight">
-            GET IN TOUCH WITH 
-            </h1>
-            <h1 class="text-6xl md:text-7xl font-extrabold mb-4 tracking-tight text-pink-500">
-               GenZ Store
-            </h1>
-            <p class="text-xl mb-8 text-gray-700">
-            We’d love to hear from you — drop us a message <br> and stay connected with the latest trends!
-            </p>
-            <a href="#contact" class="bg-purple-600 text-white px-8 py-3 rounded-xl shadow-lg hover:bg-indigo-600">
-            Contact Us
-            </a>
+  <!-- Main content -->
+  <main class="flex-1 flex items-center justify-center px-4 py-10 sm:py-16">
+    <div class="w-full max-w-md bg-white rounded-2xl shadow-md p-6 sm:p-10">
+
+      <div class="text-center mb-8">
+        <h1 class="text-2xl sm:text-3xl font-bold text-gray-900">Create your account</h1>
+        <p class="mt-2 text-sm text-gray-500">Join GenZ Store and start shopping</p>
+      </div>
+
+      <form class="space-y-5">
+
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700 mb-1.5">Full name</label>
+          <input type="text" id="name" name="name" placeholder="SoK Pisey" required class="w-full px-4 py-2.5 rounded-xl border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
         </div>
-    </section>
 
-    <!-- Main Content -->
-    <main id="contact" class="flex-grow flex items-center justify-center p-6">
-
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden max-w-5xl w-full grid md:grid-cols-2">
-
-            <!-- Left Section -->
-            <div class="bg-purple-700 text-white flex flex-col items-center justify-center p-10">
-
-                <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center mb-8">
-                    <img src="https://copilot.microsoft.com/th/id/BCO.e5597b0b-370e-40ff-b0d6-f7a9d869c1ed.png"
-                         alt="Logo"
-                         class="object-contain">
-                </div>
-
-                <h2 class="text-3xl font-semibold mb-4">
-                    Get in touch with us
-                </h2>
-
-                <p class="text-center mb-12">
-                    Please send us a little more detail so we can help you.
-                </p>
-
-                <div class="space-y-8">
-
-                    <div class="flex items-center gap-4">
-                        <div class="bg-white rounded-lg h-10 w-10 flex items-center justify-center shadow-2xl">
-                            <span class="w-8 h-8 rounded-lg stroke-2 stroke-blue-500 flex items-center justify-center text-blue-600 shrink-0 text-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-5 h-5" fill="purple">
-                                    <path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/>
-                                </svg>
-                            </span>
-                        </div>
-                        <span>info@genzstore.com</span>
-                    </div>
-
-                    <div class="flex items-center gap-4 ">
-                        <div class="bg-white rounded-lg h-10 w-10 flex items-center justify-center shadow-2xl">
-                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="purple">
-                                <path d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z"/>
-                            </svg>
-                        </div>
-
-                        <span>+855 123456789</span>
-                    </div>
-
-                    <div class="flex items-center gap-4">
-                        <div class="bg-white rounded-xl h-10 w-10 flex items-center justify-center shadow-2xl">
-                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="purple">
-                                <path d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z"/>
-                            </svg>
-                        </div>
-                        <span>Phnom Penh, Cambodia</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Right Section -->
-            <div class="p-10 md:p-14 bg-gray-100">
-
-                <h2 class="text-4xl font-bold text-gray-700 mb-2">
-                    Contact Us
-                </h2>
-
-                <p class="text-gray-400 mb-8">
-                    Let's send us a message
-                </p>
-
-                <form class="space-y-5">
-
-                    <div>
-                        <label class="block text-gray-600 mb-2">
-                            Full Name
-                        </label>
-                        <input
-                            type="text"
-                            placeholder="Enter your full name"
-                            class="w-full border-gray-300 border-1 rounded-2xl px-4 py-3 focus:outline-purple-500 focus:ring-1 focus:ring-[#4F5D46]">
-                    </div>
-
-                    <div>
-                        <label class="block text-gray-600 mb-2">
-                            Email
-                        </label>
-                        <input
-                            type="email"
-                            placeholder="Enter your email"
-                            class="w-full rounded-2xl px-3 py-3 border-gray-300 border-1 focus:outline-purple-500 focus:ring-1 focus:ring-[#4F5D46]">
-                    </div>
-
-                    <div>
-                        <label class="block text-gray-600 mb-2">
-                            Message
-                        </label>
-                        <textarea
-                            rows="4"
-                            placeholder="Enter your message"
-                            class="w-full rounded-2xl px-4 py-3 border-gray-300 border-1 focus:outline-purple-500 focus:ring-1 focus:ring-[#4F5D46]"></textarea>
-                    </div>
-
-                    <button
-                        type="submit"
-                        class="w-full inline-block bg-purple-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-indigo-600">
-                        Submit
-                    </button>
-                </form>
-            </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700 mb-1.5">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required class="w-full px-4 py-2.5 rounded-xl border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
         </div>
-    </main>
 
-    <!-- footer -->
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700 mb-1.5">Password</label>
+          <input type="password" id="password" name="password" placeholder="At least 8 characters" required class="w-full px-4 py-2.5 rounded-xl border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+        </div>
+
+        <div>
+          <label for="confirm-password" class="block text-sm font-medium text-gray-700 mb-1.5">Confirm password</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required class="w-full px-4 py-2.5 rounded-xl border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500" >
+        </div>
+
+        <div class="flex items-start">
+          <input
+            type="checkbox"
+            id="terms"
+            name="terms"
+            required
+            class="w-4 h-4 mt-0.5 rounded border-gray-300 text-purple-600 focus:ring-purple-500"
+          >
+          <label for="terms" class="ml-2 text-sm text-gray-600">
+            I agree to the <a href="#" class="text-purple-600 hover:text-purple-700">Terms of Service</a> and <a href="#" class="text-purple-600 hover:text-purple-700">Privacy Policy</a>
+          </label>
+        </div>
+
+        <button type="submit" class="w-full h-11 flex items-center justify-center text-white font-medium rounded-2xl bg-purple-600 hover:bg-purple-700 transition"> Sign up </button>
+
+      </form>
+
+      <div class="flex items-center my-6">
+        <div class="flex-1 border-t border-gray-200"></div>
+        <span class="px-3 text-sm text-gray-400">or</span>
+        <div class="flex-1 border-t border-gray-200"></div>
+      </div>
+
+      <button class="w-full h-11 flex items-center justify-center gap-2 rounded-2xl border border-gray-300 text-gray-700 font-medium hover:bg-gray-50 transition">
+        <svg class="w-5 h-5" viewBox="0 0 24 24">
+          <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+          <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.99.69-2.26 1.1-3.71 1.1-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+          <path fill="#FBBC05" d="M5.84 14.14A6.96 6.96 0 0 1 5.4 12c0-.74.13-1.46.36-2.14V7.02H2.18A11 11 0 0 0 1 12c0 1.77.42 3.45 1.18 4.98l3.66-2.84z"/>
+          <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.02l3.66 2.84c.87-2.6 3.3-4.48 6.16-4.48z"/>
+        </svg>
+        Continue with Google
+      </button>
+
+      <p class="text-center text-sm text-gray-500 mt-8">
+        Already have an account?
+        <a href="./signup.html" class="text-purple-600 font-medium hover:text-purple-700">Log in</a>
+      </p>
+
+    </div>
+  </main>
+
+  <!-- footer -->
     <footer class="bg-purple-800 shadow text-white/80 font-family">
         <div class="max-w-7xl mx-auto px-12 pt-12">
 

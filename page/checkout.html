@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Checkout Page</title>
+  <!-- tailwind css -->
   <link rel="stylesheet" href="/src/output.css">
 </head>
 <body class="bg-gray-50 min-h-screen font-sans">
@@ -57,7 +58,7 @@
                         </svg>
                     </label>
 
-                    <!-- Mobile dropdown menu: hidden by default, shown when checkbox is checked -->
+                    <!-- Mobile dropdown menu -->
                     <div class="hidden peer-checked:flex absolute top-full left-0 w-full bg-gray-100 flex-col space-y-3 p-4 shadow-md">
                         <a href="../home.html" class="hover:text-purple-600">Home</a>
                         <a href="../page/product.html" class="hover:text-purple-600">Products</a>
@@ -70,17 +71,18 @@
     </nav>
 
   <div class="max-w-7xl mx-auto p-5 px-6 py-8">
-
-    <h1 class="text-2xl font-medium text-gray-900 mb-6">Checkout</h1>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
       <!-- forms -->
       <div class="lg:col-span-2 space-y-5">
 
-        <!-- Shipping address -->
+        <!-- address -->
         <div class="bg-white rounded-xl border border-gray-200 p-5">
           <h2 class="text-base font-medium text-gray-900 mb-4 pb-3 border-b border-gray-100 flex items-center gap-2">
-            <svg class="w-4 h-4 text-[#7B00D4]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <svg class="w-5 h-7 text-purple-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 25 25">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
             Address
           </h2>
 
@@ -130,7 +132,7 @@
       <div>
         <div class="bg-white rounded-xl border border-gray-200 p-5">
           <h2 class="text-base font-medium text-gray-900 mb-4 pb-3 border-b border-gray-100 flex items-center gap-2">
-            <svg class="w-4 h-4 text-[#7B00D4]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+            <svg class="w-5 h-5 text-purple-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 26 26"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
             Order summary
           </h2>
 
@@ -138,7 +140,7 @@
           <div class="space-y-3 mb-5">
             <div class="flex items-center gap-3">
               <div class="w-14 h-14 bg-gray-100 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">
-                <img class="rounded-lg w-14 h-16" src="https://i.pinimg.com/736x/32/09/71/32097160360bb8f3076e39512fa1f5c0.jpg" alt="">
+                <img class="rounded-lg w-14 h-16 object-cover" src="https://i.pinimg.com/736x/32/09/71/32097160360bb8f3076e39512fa1f5c0.jpg" alt="">
               </div>
               <div class="flex-1 min-w-0">
                 <p class="text-sm font-medium text-gray-900 truncate">Classic T-Shirt</p>
@@ -149,50 +151,46 @@
 
             <div class="flex items-center gap-3">
               <div class="w-14 h-14 bg-gray-100 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">
-                <img class="rounded-lg w-14 h-16" src="https://i.pinimg.com/736x/b8/32/25/b83225fba6d3a9ca6b97dc7ce2015229.jpg" alt="">
+                <img class="rounded-lg w-14 h-16 object-cover" src="https://i.pinimg.com/736x/1b/d2/4b/1bd24b8aa43adf51c113b29db1f1fdc4.jpg" alt="">
               </div>
               <div class="flex-1 min-w-0">
-                <p class="text-sm font-medium text-gray-900 truncate">Classic White Tee</p>
+                <p class="text-sm font-medium text-gray-900 truncate">Minimalist Duo Style</p>
                 <p class="text-xs text-gray-500">Size: L · Qty: 1</p>
               </div>
-              <span class="text-sm font-medium text-[#7B00D4]">$18.99</span>
+              <span class="text-sm font-medium text-purple-600">$37.99</span>
             </div>
 
             <div class="flex items-center gap-3">
               <div class="w-14 h-14 bg-gray-100 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">
-                <img class="rounded-lg w-14 h-16" src="https://i.pinimg.com/736x/6e/33/8b/6e338b65febd14fe42f9d675defbce17.jpg" alt="">
+                <img class="rounded-lg w-14 h-16 object-cover" src="https://i.pinimg.com/736x/09/6e/24/096e2426857c785fa51fc072339cd439.jpg" alt="">
               </div>
               <div class="flex-1 min-w-0">
-                <p class="text-sm font-medium text-gray-900 truncate">Oversized Sky Blue Tee</p>
+                <p class="text-sm font-medium text-gray-900 truncate">Pastel Harmony Duo</p>
                 <p class="text-xs text-gray-500">Size: XL · Qty: 1</p>
               </div>
-              <span class="text-sm font-medium text-[#7B00D4]">$16.99</span>
+              <span class="text-sm font-medium text-purple-600">$39.99</span>
             </div>
           </div>
 
           <!-- Totals -->
           <div class="border-t border-gray-100 pt-3 space-y-2">
             <div class="flex justify-between text-sm text-gray-500">
-              <span>Subtotal</span><span>$55.97</span>
+              <span>Subtotal</span><span>$97.97</span>
             </div>
             <div class="flex justify-between text-sm text-gray-500">
               <span>Delivery</span><span class="text-green-600 font-medium">Free</span>
             </div>
             <div class="flex justify-between text-base font-medium text-gray-900 pt-2 border-t border-gray-100">
-              <span>Total</span><span class="text-[#7B00D4]">$60.45</span>
+              <span>Total</span><span class="text-purple-600">$97.97</span>
             </div>
           </div>
 
           <!-- CTA -->
-          <a href="payment.html" class="mt-4 w-full bg-[#7B00D4] hover:bg-[#6500b0] text-white text-sm font-medium py-3 rounded-lg flex items-center justify-center gap-2 transition-colors">
+          <a href="payment.html" class="mt-4 w-full bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium py-3 rounded-lg flex items-center justify-center gap-2 transition-colors">
             Continue to payment
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
           </a>
 
-          <div class="flex items-center justify-center gap-1.5 mt-3">
-            <svg class="w-3.5 h-3.5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-            <span class="text-xs text-gray-400">Secure checkout — SSL encrypted</span>
-          </div>
         </div>
       </div>
 
@@ -227,9 +225,9 @@
                     <h3 class="text-xs font-semibold uppercase tracking-widest mb-4 text-white">Products</h3>
                     <ul class="space-y-2.5 text-sm">
                         <li><a href="../page/product.html" class="hover:text-purple-600 transition-colors">All Styles</a></li>
-                        <li><a href="../page/men.html" class="hover:text-purple-600 transition-colors">Men Styles</a></li>
-                        <li><a href="../page/women.html" class="hover:text-purple-600 transition-colors">Women Styles</a></li>
-                        <li><a href="../page/couple.html" class="hover:text-purple-600 transition-colors">Couple Styles</a></li>
+                        <li><a href="../page/men.html" class="hover:text-purple-600 transition-colors">Men's Style</a></li>
+                        <li><a href="../page/women.html" class="hover:text-purple-600 transition-colors">Women's Style</a></li>
+                        <li><a href="../page/couple.html" class="hover:text-purple-600 transition-colors">Couple's Style</a></li>
                     </ul>
                 </div>
 

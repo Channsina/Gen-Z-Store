@@ -6,7 +6,7 @@
   <title>Payment Page</title>
   <link rel="stylesheet" href="/src/output.css">
 </head>
-<body class="bg-gray-100 min-h-screen font-family">
+<body class="bg-gray-50 font-family">
 
   <!-- Navigation -->
     <nav class="bg-gray-100 text-black/50 shadow p-4 sticky top-0 z-50">
@@ -57,7 +57,7 @@
                         </svg>
                     </label>
 
-                    <!-- Mobile dropdown menu: hidden by default, shown when checkbox is checked -->
+                    <!-- Mobile dropdown menu -->
                     <div class="hidden peer-checked:flex absolute top-full left-0 w-full bg-gray-100 flex-col space-y-3 p-4 shadow-md">
                         <a href="../home.html" class="hover:text-purple-600">Home</a>
                         <a href="../page/product.html" class="hover:text-purple-600">Products</a>
@@ -70,17 +70,15 @@
     </nav>
 
   <div class="max-w-7xl mx-auto p-5 px-6 py-8">
-
-    <h1 class="text-2xl font-medium text-gray-900 mb-6">Payment</h1>
-
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
       <div class="lg:col-span-2 space-y-5">
 
         <div class="bg-white rounded-xl border border-gray-200 p-5">
           <h2 class="text-base font-medium text-gray-900 mb-4 pb-3 border-b border-gray-100 flex items-center gap-2">
-            <svg class="w-4 h-4 text-[#7B00D4]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
-            Payment method
+            <svg class="w-4 h-4 text-purple-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+              Payment method
           </h2>
 
           <input type="radio" name="paytab" id="radio-card" class="hidden peer/card" checked/>
@@ -88,33 +86,28 @@
 
           <div class="flex gap-2 mb-5">
             <label for="radio-card"
-              class="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 border text-sm font-medium rounded-lg cursor-pointer transition-all
-                     border-gray-200 bg-white text-gray-500
-                     peer-checked/card:border-[#7B00D4] peer-checked/card:bg-[#f5efff] peer-checked/card:text-[#7B00D4]">
+              class="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 border text-sm font-medium rounded-lg cursor-pointer transition-all border-gray-200 bg-white text-gray-500 peer-checked/card:border-purple-600 peer-checked/card:bg-white peer-checked/card:text-purple-600">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
-              Credit card
+                Credit card
             </label>
 
-            <label for="radio-bakong"
-              class="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 border text-sm font-medium rounded-lg cursor-pointer transition-all
-                     border-gray-200 bg-white text-gray-500
-                     peer-checked/bakong:border-[#7B00D4] peer-checked/bakong:bg-[#f5efff] peer-checked/bakong:text-[#7B00D4]">
+            <label for="radio-bakong" class="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 border text-sm font-medium rounded-lg cursor-pointer transition-all border-gray-200 bg-white text-gray-500 peer-checked/bakong:border-purple-600 peer-checked/bakong:bg-white peer-checked/bakong:text-purple-600">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75h4.5v4.5h-4.5v-4.5zM15.75 3.75h4.5v4.5h-4.5v-4.5zM3.75 15.75h4.5v4.5h-4.5v-4.5zM15.75 15.75h2.25M15.75 18.75h2.25M18.75 15.75v2.25M18.75 19.5v.75M12 3.75v4.5M9.75 12h2.25M12 9.75v2.25M12 14.25v2.25M9.75 16.5h2.25"/></svg>
-              Bakong KHQR
+                Bakong KHQR
             </label>
           </div>
 
           <div id="panel-card" class="hidden peer-checked/card:block">
             <div class="mb-3">
               <label class="block text-xs text-gray-500 mb-1">Cardholder name</label>
-              <input type="text" placeholder="John Doe" class="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 focus:outline-none focus:border-[#7B00D4] focus:ring-2 focus:ring-[#7B00D4]/20" />
+              <input type="text" placeholder="Sok Pisey" class="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 focus:outline-none focus:border-purple-600 focus:ring-2 focus:ring-black/20" />
             </div>
 
             <div class="mb-3">
               <label class="block text-xs text-gray-500 mb-1">Card number</label>
               <div class="relative">
                 <input type="text" placeholder="1234  5678  9012  3456" maxlength="19"
-                  class="w-full border border-gray-300 rounded-lg px-3 py-2.5 pr-20 text-sm text-gray-900 focus:outline-none focus:border-[#7B00D4] focus:ring-2 focus:ring-[#7B00D4]/20" />
+                  class="w-full border border-gray-300 rounded-lg px-3 py-2.5 pr-20 text-sm text-gray-900 focus:outline-none focus:border-purple-600 focus:ring-2 focus:ring-purple-800" />
                 <div class="absolute right-3 top-1/2 -translate-y-1/2 flex gap-1">
                   <span class="text-[9px] font-bold bg-[#1a1f71] text-white px-1.5 py-0.5 rounded">VISA</span>
                   <span class="text-[9px] font-bold bg-red-600 text-white px-1.5 py-0.5 rounded">MC</span>
@@ -125,25 +118,23 @@
             <div class="grid grid-cols-2 gap-3 mb-4">
               <div>
                 <label class="block text-xs text-gray-500 mb-1">Expiry date</label>
-                <input type="text" placeholder="MM / YY" maxlength="7"
-                  class="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 focus:outline-none focus:border-[#7B00D4] focus:ring-2 focus:ring-[#7B00D4]/20" />
+                <input type="text" placeholder="MM / YY" maxlength="7" class="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 focus:outline-none focus:border-purple-600 focus:ring-2 focus:ring-purple-800" />
               </div>
               <div>
                 <label class="block text-xs text-gray-500 mb-1">CVV</label>
                 <input type="text" placeholder="•••" maxlength="4"
-                  class="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 focus:outline-none focus:border-[#7B00D4] focus:ring-2 focus:ring-[#7B00D4]/20" />
+                  class="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 focus:outline-none focus:border-purple-600 focus:ring-2 focus:ring-purple-800" />
               </div>
             </div>
 
             <label class="flex items-center gap-2 text-sm text-gray-500 cursor-pointer mb-4">
               <input type="checkbox" checked class="accent-[#7B00D4] w-4 h-4" />
-              Save card for future purchases
+                Save card for future purchases
             </label>
 
-            <button class="w-full bg-[#7B00D4] hover:bg-[#6500b0] text-white font-medium py-3.5 rounded-lg flex items-center justify-center gap-2 transition-colors text-sm">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-              Pay $60.45
-            </button>
+            <a href="#thankyou" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-3.5 rounded-lg flex items-center justify-center gap-2 transition-colors text-sm">
+                Pay $97.97
+            </a>
           </div>
 
           <div id="panel-bakong" class="hidden peer-checked/bakong:block text-center">
@@ -151,79 +142,86 @@
 
             <div class="w-44 h-44 mx-auto mb-4 bg-white border border-gray-200 rounded-lg flex items-center justify-center">
               <svg class="w-28 h-28 text-gray-900" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75h4.5v4.5h-4.5v-4.5zM15.75 3.75h4.5v4.5h-4.5v-4.5zM3.75 15.75h4.5v4.5h-4.5v-4.5zM15.75 15.75h2.25M15.75 18.75h2.25M18.75 15.75v2.25M18.75 19.5v.75M12 3.75v4.5M9.75 12h2.25M12 9.75v2.25M12 14.25v2.25M9.75 16.5h2.25"/>
+                <img src="../image/qr.png" alt="">
               </svg>
             </div>
 
-            <div class="inline-flex items-center gap-1.5 bg-[#f5efff] text-[#7B00D4] text-xs font-medium px-3 py-1 rounded-lg mb-4">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              QR expires in 4:32
+            <div class="inline-flex items-center gap-1.5 bg-white text-purple-600 text-xs font-medium px-3 py-1 rounded-lg mb-4">
+                QR expires in 4:32
             </div>
 
-            <p class="text-xs text-gray-500 mb-4">Merchant: Sok Pisey Shop &middot; Ref: KHQR-29481</p>
+            <p class="text-xs text-gray-500 mb-4">Merchant: GenZ Store &middot; Ref: KHQR-29481</p>
 
-            <button class="w-full bg-[#7B00D4] hover:bg-[#6500b0] text-white font-medium py-3.5 rounded-lg flex items-center justify-center gap-2 transition-colors text-sm">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-              I have paid via Bakong
-            </button>
+            <div>
+              <a href="#thankyou" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 rounded-lg flex items-center justify-center gap-2 transition-colors text-sm">
+                I have paid via Bakong 
+              </a>
+            </div>
           </div>
-
         </div>
 
-        <div class="bg-white rounded-xl border border-gray-200 p-4 flex items-center gap-3">
-          <div class="w-9 h-9 rounded-full bg-[#f5efff] flex items-center justify-center flex-shrink-0">
-            <svg class="w-4 h-4 text-[#7B00D4]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          </div>
-          <div class="flex-1">
-            <p class="text-sm font-medium text-gray-900">Delivery to</p>
-            <p class="text-xs text-gray-500">Sok Pisey · 123 Main St, Toul Kork, Phnom Penh </p>
-          </div>
-          <a href="checkout.html" class="text-sm text-[#7B00D4] hover:underline font-medium">Edit</a>
-        </div>
       </div>
 
       <div class="space-y-4">
         <div class="bg-white rounded-xl border border-gray-200 p-5">
           <h2 class="text-base font-medium text-gray-900 mb-4 pb-3 border-b border-gray-100 flex items-center gap-2">
-            <svg class="w-4 h-4 text-[#7B00D4]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
-            Order total
+            <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+            </svg>
+              Order total
           </h2>
 
           <div class="space-y-2.5 mb-4">
             <div class="flex justify-between items-center text-sm">
-              <span class="text-gray-700">Classic T-Shirt <span class="text-gray-400 text-xs">×1</span></span>
+              <span class="text-gray-700">Classic T-Shirt<span class="text-gray-400 text-xs">×1</span></span>
               <span class="font-medium text-gray-900">$19.99</span>
             </div>
             <div class="flex justify-between items-center text-sm">
-              <span class="text-gray-700">Classic White Tee <span class="text-gray-400 text-xs">×1</span></span>
-              <span class="font-medium text-gray-900">$18.99</span>
+              <span class="text-gray-700">Minimalist Duo Style<span class="text-gray-400 text-xs">×1</span></span>
+              <span class="font-medium text-gray-900">$37.99</span>
             </div>
             <div class="flex justify-between items-center text-sm">
-              <span class="text-gray-700">Oversized Sky Blue Tee <span class="text-gray-400 text-xs">×1</span></span>
-              <span class="font-medium text-gray-900">$16.99</span>
+              <span class="text-gray-700">Pastel Harmony Duo<span class="text-gray-400 text-xs">×1</span></span>
+              <span class="font-medium text-gray-900">$39.99</span>
             </div>
           </div>
 
           <div class="border-t border-gray-100 pt-3 space-y-2">
             <div class="flex justify-between text-sm text-gray-500">
-              <span>Subtotal</span><span>$55.97</span>
+              <span>Subtotal</span><span>$97.97</span>
             </div>
             <div class="flex justify-between text-sm text-gray-500">
               <span>Delivery</span><span class="text-green-600 font-medium">Free</span>
             </div>
             <div class="flex justify-between font-medium text-gray-900 pt-2 border-t border-gray-100 text-base">
               <span>Total</span>
-              <span class="text-[#7B00D4] text-lg">$55.97</span>
+              <span class="text-[#7B00D4] text-lg">$97.97</span>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Pop up -->
+        <div id="thankyou" class="fixed inset-0 bg-white/50 hidden items-center justify-center">
+          <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-sm w-full text-center animate-[fadeIn_0.4s_ease]">
+            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-purple-100 text-purple-600">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+            <h1 class="text-2xl font-bold text-purple-600 mb-2">Payment Successful!</h1>
+            <p class="text-gray-600 mb-6">Thank you for your purchase. Your order has been confirmed.</p>
+            <a href="../page/product.html"class="inline-block px-6 py-3 bg--600 bg-purple-600  text-white font-semibold rounded-xl shadow-lg hover:shadow-xl  hover:bg-purple-700 transition-all duration-300">
+              Continue Shopping
+            </a>
+          </div>
+        </div>
+
     </div>
   </div>
 
   <!-- footer -->
-    <footer class="bg-purple-800 shadow text-white/80 font-family">
+  <footer class="bg-purple-800 shadow text-white/80 font-family">
         <div class="max-w-7xl mx-auto px-12 pt-12">
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-2 pb-10 border-b border-gray-300 ">
@@ -249,10 +247,10 @@
                 <div class="md:pl-16 ">
                     <h3 class="text-xs font-semibold uppercase tracking-widest mb-4 text-white">Products</h3>
                     <ul class="space-y-2.5 text-sm">
-                        <li><a href="../page/product.html" class="hover:text-purple-600 transition-colors">All Styles</a></li>
-                        <li><a href="../page/men.html" class="hover:text-purple-600 transition-colors">Men Styles</a></li>
-                        <li><a href="../page/women.html" class="hover:text-purple-600 transition-colors">Women Styles</a></li>
-                        <li><a href="../page/couple.html" class="hover:text-purple-600 transition-colors">Couple Styles</a></li>
+                        <li><a href="../page/product.html" class="hover:text-purple-600 transition-colors">All Style</a></li>
+                        <li><a href="../page/men.html" class="hover:text-purple-600 transition-colors">Men's Style</a></li>
+                        <li><a href="../page/women.html" class="hover:text-purple-600 transition-colors">Women's Style</a></li>
+                        <li><a href="../page/couple.html" class="hover:text-purple-600 transition-colors">Couple's Style</a></li>
                     </ul>
                 </div>
 
@@ -297,7 +295,7 @@
             </div>
 
         </div>
-    </footer>
+  </footer>
 
 </body>
 </html>
